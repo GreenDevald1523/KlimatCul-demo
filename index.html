@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Klimat</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <section class="popup hide">
+                <div class="popup__content">
+                    <div class="popup__title">
+                        Заполните форму ниже и мы свяжемся с вами в ближайшее время
+                    </div>
+                    <form class="form">
+                        <input type="text" placeholder="Ваше имя" class="name">
+                        <input type="tel" placeholder="Ваш телефон" class="phone">
+                        <select name="" placeholder="Вид услуги" class="choose-offer">
+                            <option value="start" class="choose-offer-item" selected>Вид услуги</option>
+                            <option value="" class="choose-offer-item">Профилактика кондиционера</option>
+                            <option value="" class="choose-offer-item">Чистка кондиционера</option>
+                            <option value="" class="choose-offer-item">Ремонт кондиционера</option>
+                            <option value="" class="choose-offer-item">Диагностика кондиционера</option>
+                            <option value="" class="choose-offer-item">Заправка кондиционера</option>
+                            <option value="" class="choose-offer-item">Монтаж кондиционера</option>
+                            <option value="" class="choose-offer-item">Демонтаж кондиционера</option>
+                            <option value="" class="choose-offer-item">Ремонт VRV и VRF систем</option>
+                            <option value="" class="choose-offer-item">Ремонт фанкойлов</option>
+                        </select>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkFirst" name="checkBox" class="check">
+                            <div class="checkbox__text">
+                                Я соглашаюсь с политикой конфиденциальности
+                            </div>
+                        </div>
+                        <button type="button" disabled="true" class="btn dis" id="show-result">
+                            ВЫЗВАТЬ МАСТЕРА
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="confirm hide" id="confirm">
+                <div class="confirm__content">
+                    <div class="confirm__text">
+                        Спасибо, ваша заявка принята! Наш специалист свяжется с вами в ближайшее время.
+                    </div>
+                </div>
+            </section>
+            <header class="header" id="home">
+                <div class="container">
+                    <a href="#home" class="title text-decoration-none">
+                        <span class="klimat">Klimat</span>
+                        <span class="cul">Cul</span>
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <a href="#" class="text-decoration-none">
+                                <li class="menu__item">Услуги</li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="menu__item">Прайс-лист</li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="menu__item">Коды ошибок</li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="menu__item">Контакты</li>
+                            </a>
+                        </ul>
+                    </nav>
+                    <div class="header__phone-numbers">
+                        <a href="tel:+74993984011" class="number text-decoration-none">8 499 398-40-11</a>
+                        <a href="tel:+79267653335" class="number text-decoration-none">8 926 765-33-35</a>
+                    </div>
+                </div>
+            </header>
+            <section class="main">
+                <div class="container">
+                    <div class="main__title-text">
+                        <div class="main__title-text-left">
+                            <div class="main__title">
+                                Профессиональный ремонт и обслуживание кондиционеров
+                            </div>
+                            <div class="main__sub">
+                                Мы оказываем полный спектр услуг по обслуживанию и ремонту кондиционеров и климатического оборудования в Москве и Подмосковье.
+                            </div>
+                            <button class="btn call-master">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main__title-text-img">
+                        <img src="./img/main.jpg" alt="1">
+                    </div>
+            </section>
+            <section class="main__offers">
+                <div class="container">
+                    <div class="main__offers-title">
+                        НАШИ УСЛУГИ
+                    </div>
+                    <div id="slick" class="main__offers-items">
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer1.jpg" alt="2">
+                            </div>
+                            <div class="offer__name">
+                                Профилактика кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 2500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer2.jpg" alt="3">
+                            </div>
+                            <div class="offer__name">
+                                Чистка кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 1500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer3.jpg" alt="4">
+                            </div>
+                            <div class="offer__name">
+                                Ремонт кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 900₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer4.jpg" alt="5">
+                            </div>
+                            <div class="offer__name">
+                                Диагностика кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 1500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer5.jpg" alt="6">
+                            </div>
+                            <div class="offer__name">
+                                Заправка кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 1200₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>                        
+                        </div>
+                        <div class="main__offers-item">                            
+                            <div class="offer__img">
+                                <img src="./img/offer6.jpg" alt="7">
+                            </div>
+                            <div class="offer__name">
+                                Монтаж кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 2500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>                        
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer7.jpg" alt="8">
+                            </div>
+                            <div class="offer__name">
+                                Демонтаж кондиционера
+                            </div>
+                            <div class="offer__price">
+                                от 2500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>         
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer8.jpg" alt="9">
+                            </div>
+                            <div class="offer__name">
+                                Ремонт VRV и VRF систем
+                            </div>
+                            <div class="offer__price">
+                                от 2500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button>
+                        </div>
+                        <div class="main__offers-item">
+                            <div class="offer__img">
+                                <img src="./img/offer9.jpg" alt="10">
+                            </div>
+                            <div class="offer__name">
+                                Ремонт фанкойлов
+                            </div>
+                            <div class="offer__price">
+                                от 2500₽
+                            </div>
+                            <button class="call-master btn small-call">
+                                ВЫЗВАТЬ МАСТЕРА
+                            </button> 
+                        </div> 
+                    </div>
+                    <div class="arrows">
+                        <button class="arrow-left">
+                            <img src="./img/arrow-left.jpg" alt="2">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="./img/arrow-right.jpg" alt="3">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="advant">
+                <div class="container">
+                    <div class="advant__title">
+                        Почему нас выбирают?
+                    </div>
+                    <div class="advant__items">
+                        <div class="advant__items-left">
+                            <div class="advant__item">
+                                <span class="advant__item-number">1</span>
+                                <span class="advant__item-name">Компетенции</span>
+                                <hr>
+                                <p class="advant__item-sub">
+                                    Обслуживаем климатическое оборудование на любых объектах.
+                                </p>
+                            </div>
+                            <div class="advant__item">
+                                <span class="advant__item-number">2</span>
+                                <span class="advant__item-name">Качество</span>
+                                <hr>
+                                <p class="advant__item-sub">
+                                    Сотрудничаем только с проверенными поставщиками.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advant__items-right">
+                            <div class="advant__item">
+                                <span class="advant__item-number">3</span>
+                                <span class="advant__item-name">Гарантии</span>
+                                <hr>
+                                <p class="advant__item-sub">
+                                    Предоставляем гарантии на все виды работ.
+                                </p>
+                            </div>
+                            <div class="advant__item">
+                                <span class="advant__item-number">4</span>
+                                <span class="advant__item-name">Учет особенностей</span>
+                                <hr>
+                                <p class="advant__item-sub">
+                                    Работаем в соответствии с требованиями производителей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="help">
+                <div class="container">
+                    <div class="about__title">
+                        О нас
+                    </div>
+                    <div class="about__article">
+                        <div class="about__article-left">
+                            <p class="text">
+                                Компания «KlimatCul» — молодая команда лицензированных специалистов по монтажу, техническому обслуживанию и ремонту современных систем кондиционирования.
+                            </p>
+                            <p class="text">
+                                Мы работаем с кондиционерами всех типов и конструкций, используя только оригинальные запчасти и профиссиональные инструменты, чтобы обеспечить высокое качество проводимых работ.
+                            </p>
+                        </div>
+                        <div class="about__article-right">
+                            <p class="red__text">
+                                Доверяя свою технику нашей компании - вы доверяете ее профессионалам!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__title">
+                        FAQ
+                    </div>
+                    <div class="faq__items">
+                        <hr>
+                        <div class="faq__item">
+                            <div class="faq__opened-text">
+                                <p class="faq__item-text">Можно ли подключать кондиционер к стандартной розетке?</p>
+                                <a href="#col1">
+                                    <button id="opn1" class="open__menu" style="margin-left: 156.08px;">
+                                        <span class="vert"></span>
+                                        <span class="gor"></span>
+                                    </button>
+                                </a>
+                            </div>
+                            <p id="faq1" class="faq__hidden-text">
+                                Можно, если электро-параметры агрегата соответствуют параметрам сети. Учитывается не только напряжение, но и сечение провода, общая сетевая нагрузка, ограничения автомата. Бытовая розетка подходит только кондиционерам до 3,5 кВт.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="faq__item">
+                            <div class="faq__opened-text">
+                                <p class="faq__item-text">Для чего необходимо техобслуживание кондиционера?</p>
+                                <a href="#col2">
+                                    <button id="opn2" class="open__menu" style="margin-left: 202px;">
+                                        <span class="vert"></span>
+                                        <span class="gor"></span>
+                                    </button>
+                                </a>
+                            </div>
+                            <p id="faq2" class="faq__hidden-text">
+                                Прежде всего, регулярное обслуживание в разы увеличивает срок службы оборудования. К тому же гарантийные обязательства сохраняются только при условии регулярного выполнения обслуживания. <br> <br>
+                                Что касается сроков, то они будут зависеть от места и интенсивности эксплуатации. Так, для бытовых потребителей, используемых кондиционер периодически, достаточно заказывать полное ТО раз в год перед началом сезона. <br> <br>
+                                Машины, эксплуатируемые в коммерческих помещениях, нужно обслуживать ежеквартально. В случаях, когда агрегат работает непрерывно, независимо от времени суток и времени года, обслуживать его необходимо ежемесячно.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="faq__item">
+                            <div class="faq__opened-text">
+                                <p class="faq__item-text">Как часто нужно обслуживать кондиционер?</p>
+                                <a href="#col3">
+                                    <button id="opn3" class="open__menu" style="margin-left: 314px">
+                                        <span class="vert"></span>
+                                        <span class="gor"></span>
+                                    </button>
+                                </a>
+                            </div>
+                            <p id="faq3" class="faq__hidden-text">
+                                Минимум дважды в год — в начале и в конце сезона — нужно очищать кондиционер самостоятельно или приглашать специалистов. Раз в полтора года или после каждого ремонта нужно проверять и при необходимости дополнять уровень хладагента, иначе воздух будет хуже охлаждаться, а прибор начнёт нагреваться.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="faq__item">
+                            <div class="faq__opened-text">
+                                <p class="faq__item-text">Как часто требуется менять фильтры?</p>
+                                <a href="#col4">
+                                    <button id="opn4" class="open__menu" style="margin-left: 385px">
+                                        <span class="vert"></span>
+                                        <span class="gor"></span>
+                                    </button>
+                                </a>
+                            </div>
+                            <p id="faq4" class="faq__hidden-text">
+                                Мы рекомендуем менять воздушные фильтры через 4-6 месяцев интенсивной работы прибора. Желательно это делать весной, перед тем, как наступит жаркое время года. Некоторые производители оснащают кондиционеры специальным индикатором, который в случае загрязнения фильтра меняет свой цвет.
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="communication">
+                        <div class="contacts">
+                            <div class="contacts__title">
+                                НАШИ КОНТАКТЫ
+                            </div>
+                            <div class="number">8 499 398-40-11</div>
+                            <div class="number">8 926 765-33-35</div>
+                            <div class="mail">klimatcul@yandex.ru</div>
+                            <div class="icons">
+                                <div class="icon">
+                                    <img src="./img/whatsapp.jpg" alt="4">
+                                </div>
+                                <div class="icon">
+                                    <img src="./img/phone.jpg" alt="5">
+                                </div>
+                                <div class="icon">
+                                    <img src="./img/tg.jpg" alt="6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration">
+                            <div class="registration__title">
+                                Заполните форму ниже и мы свяжемся с вами в ближайшее время
+                            </div>
+                            <form class="form">
+                                <input type="text" placeholder="Ваше имя" class="name">
+                                <input type="tel" placeholder="Ваш телефон" class="phone">
+                                <select name="" placeholder="Вид услуги" class="choose-offer">
+                                    <option value="start" class="choose-offer-item" selected>Вид услуги</option>
+                                    <option value="" class="choose-offer-item">Профилактика кондиционера</option>
+                                    <option value="" class="choose-offer-item">Чистка кондиционера</option>
+                                    <option value="" class="choose-offer-item">Ремонт кондиционера</option>
+                                    <option value="" class="choose-offer-item">Диагностика кондиционера</option>
+                                    <option value="" class="choose-offer-item">Заправка кондиционера</option>
+                                    <option value="" class="choose-offer-item">Монтаж кондиционера</option>
+                                    <option value="" class="choose-offer-item">Демонтаж кондиционера</option>
+                                    <option value="" class="choose-offer-item">Ремонт VRV и VRF систем</option>
+                                    <option value="" class="choose-offer-item">Ремонт фанкойлов</option>
+                                </select>
+                                <div class="checkbox">
+                                    <input id="checkSecond" type="checkbox" name="checkBox" class="check">
+                                    <div class="checkbox__text">
+                                        Я соглашаюсь с политикой конфиденциальности
+                                    </div>
+                                </div>
+                                <button id="btnBgChange" disabled="true" class="dis">
+                                    ВЫЗВАТЬ МАСТЕРА
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <a href="#home" class="title text-decoration-none">
+                        <span class="klimat">Klimat</span>
+                        <span class="cul">Cul</span>
+                    </a>
+                    <div class="footer__text">
+                        <a href="#" class="polit-conf">
+                            Политика конфиденциальности
+                        </a>
+                        <p class="tilda">
+                            Иконки от Tilda Publishing
+                        </p>
+                    </div>
+                    <p class="dev-design">
+                        Разработка дизайна
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+    <script type="text/javascript">
+        const breakpoint = {
+            xs: 480,
+            sm: 768,
+            md: 992,
+            lg: 1200
+        };
+        $(document).ready(function() {
+            $('#slick').slick({
+            autoplay: false,
+            draggable: true,
+            pauseOnHover: false,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            prevArrow: document.querySelector(".arrow-left"),
+            nextArrow: document.querySelector(".arrow-right"),
+            mobileFirst: true,
+            responsive: [
+                {
+                breakpoint: 1110,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        })
+        })
+    </script>
+</body>
+
+</html>

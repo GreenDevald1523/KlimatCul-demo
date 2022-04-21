@@ -15,7 +15,6 @@ body {
 .wrapper {
     display: flex;
     overflow: hidden;
-    overflow-x: auto;
 }
 
 .content {
@@ -28,6 +27,7 @@ body {
 }
 
 .header {
+    position:static;
     background-color: #095D6A;
     margin: 0;
 }
@@ -82,7 +82,7 @@ a {
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 26px;
+    transition: all 0.4s ease-in-out 0s;
     text-align: center;
     color: #FFFFFF;
     margin-right: 40px;
@@ -92,16 +92,21 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: -15px;
-    margin-left: 87px;
+    margin-left: 124px;
 }
 
 .number {
     font-family: 'PT Root UI';
+    transition: all 0.4s ease-in-out 0s;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.header .number {
+    margin-top: 8px;
 }
 
 .main {
@@ -178,8 +183,8 @@ a {
 
 .main__title-text-img img {
     border-radius: 550px 0px 0px 550px;
-    width: 660px;
-    height: 564px;
+    width: 610px;
+    height: 514px;
     position: absolute;
     z-index: 0;
     right: 0;
@@ -270,8 +275,10 @@ hr {
 }
 
 .main__offers-items {
-    display: flex;
+    width: 100%;
     padding-bottom: 41px;
+    display: flex;
+    justify-content: center;
 }
 
 .main__offers-item {
@@ -279,13 +286,14 @@ hr {
     box-sizing: border-box;
     padding-bottom: 32px;
     border-radius: 12px;
-    margin-right: 30px;
     max-width: 255px;
-    max-height: 448px;
+    height: 448px;
+    margin: 0 15px;
 }
 
 .offer__img img {
     max-width: 246px;
+    height: 192px;
     border-radius: 12px 12px 0px 0px;
 }
 
@@ -665,7 +673,9 @@ hr {
     margin-top: 63px;
 }
 
-.polit-conf {}
+.polit-conf {
+    transition: all 0.4s ease-in-out 0s;
+}
 
 .tilda {}
 
@@ -757,8 +767,15 @@ hr {
     height: 40px;
 }
 
-.menu__item:hover, .number:hover {
-    transition: all 0.2s ease-in-out 0s;
+.menu__item:hover {
+    text-decoration: underline;
+    text-decoration-color: #F57B51;
+    text-underline-offset: 36px;
+    text-decoration-thickness: 5.34px;
+    color: #F57B51;
+}
+
+.number:hover,.polit-conf:hover {
     color: #F57B51;
 }
 
@@ -816,4 +833,265 @@ input:hover, select:hover {
     text-align: center;
     width: 436px;
     color: #FDF6F0;
+}
+
+.offers__text {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #292929;
+}
+
+.offers__items {
+    margin-top: 70px;
+}
+
+.offers__links-item {
+    display: flex;
+    margin-bottom: -5px;
+}
+
+.offers__links-item-img img{
+    width: 350px;
+    height: 246px;
+}
+
+.offers__links-item-name-price {
+    margin: 0 30px;
+}
+
+.offers__links-item-name {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    width: 255px;
+    line-height: 100%;
+    color: #292929;
+    margin-top: 32px;
+}
+
+.offers__links-item-price {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 130%;
+    color: #292929;
+    margin-top: 73px;
+}
+
+.offers__links-item-desc-more {
+    margin-top: 32px;
+    position: relative;
+    right: 25px;
+}
+
+.offers__links-item-desc {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    width: 380px;
+    color: #292929;
+}
+
+.offers__links-item-more {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    color: #292929;
+}
+
+.offers__links-item-more:hover {
+    color: #095D6A;
+    text-decoration-line: underline;
+}
+
+.offers__links-item-right {
+    display: flex;
+}
+
+.offers__links-item-right hr{
+    border: 1px solid #292929;
+    margin-top: -2px;
+    position: absolute;
+    width: 730px;
+    height: 0px;
+    margin-left: 30px;
+}
+
+.pricelst {
+}
+
+.pricelst__item {
+    display: flex;
+}
+
+.pricelst__item-left {
+    max-width: 635px;
+}
+
+.pricelst__item-left-title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 33px;
+    line-height: 130%;
+    color: #292929;
+}
+
+.pricelst__item-left-offers {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #292929;
+}
+
+.pricelst__item-left-offer {
+    margin-bottom: 16px;
+    max-width: 540px;
+}
+
+.pricelst__item-right {
+
+}
+
+.pricelst__item-right-title {
+    margin-bottom: 40px;
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    color: #292929;
+}
+
+.pricelst__item-right-prices {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #292929;
+}
+
+.pricelst__item-right-price {
+    margin-bottom: 18px;
+}
+
+.pricelst__item-left-subtitle {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.pol__title {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    width: 540px;
+    color: #292929;
+    padding-top: 120px;
+    margin-bottom: 80px;
+}
+
+.pol__sub {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 135%;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.pol__text {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #292929;
+    margin-bottom: 60px;
+}
+
+.error__sub {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    width: 540px;
+    color: #292929;
+}
+
+.error__columns {
+    margin-top: 80px;
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.error__columns div:nth-child(1) {
+    margin-right: 65px;
+}
+
+.error__columns div:nth-child(2) {
+    margin-right: -40px;
+}
+
+
+.error__column-item {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.num {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #F57B51;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.error__name {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #292929;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.soon {
+    font-family: 'Arsenal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 100%;
+    text-align: center;
+    color: #292929;
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 110px;
+    padding-bottom: 90px;
 }

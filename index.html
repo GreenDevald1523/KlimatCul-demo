@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <title>Klimat</title>
+    <title>KlimatCul</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="content">
@@ -24,16 +24,16 @@
                         <input type="text" placeholder="Ваше имя" class="name">
                         <input type="tel" placeholder="Ваш телефон" class="phone">
                         <select name="" placeholder="Вид услуги" class="choose-offer">
-                            <option value="start" class="choose-offer-item" selected>Вид услуги</option>
-                            <option value="" class="choose-offer-item">Профилактика кондиционера</option>
-                            <option value="" class="choose-offer-item">Чистка кондиционера</option>
-                            <option value="" class="choose-offer-item">Ремонт кондиционера</option>
-                            <option value="" class="choose-offer-item">Диагностика кондиционера</option>
-                            <option value="" class="choose-offer-item">Заправка кондиционера</option>
-                            <option value="" class="choose-offer-item">Монтаж кондиционера</option>
-                            <option value="" class="choose-offer-item">Демонтаж кондиционера</option>
-                            <option value="" class="choose-offer-item">Ремонт VRV и VRF систем</option>
-                            <option value="" class="choose-offer-item">Ремонт фанкойлов</option>
+                            <option value="Вид услуги" class="choose-offer-item" selected>Вид услуги</option>
+                            <option value="Профилактика кондиционера" class="choose-offer-item">Профилактика кондиционера</option>
+                            <option value="Чистка кондиционера" class="choose-offer-item">Чистка кондиционера</option>
+                            <option value="Ремонт кондиционера" class="choose-offer-item">Ремонт кондиционера</option>
+                            <option value="Диагностика кондиционера" class="choose-offer-item">Диагностика кондиционера</option>
+                            <option value="Заправка кондиционера" class="choose-offer-item">Заправка кондиционера</option>
+                            <option value="Монтаж кондиционера" class="choose-offer-item">Монтаж кондиционера</option>
+                            <option value="Демонтаж кондиционера" class="choose-offer-item">Демонтаж кондиционера</option>
+                            <option value="Ремонт VRV и VRF систем" class="choose-offer-item">Ремонт VRV и VRF систем</option>
+                            <option value="Ремонт фанкойлов" class="choose-offer-item">Ремонт фанкойлов</option>
                         </select>
                         <div class="checkbox">
                             <input type="checkbox" id="checkFirst" name="checkBox" class="check">
@@ -56,19 +56,19 @@
             </section>
             <header class="header" id="home">
                 <div class="container">
-                    <a href="#home" class="title text-decoration-none">
+                    <a href="index.html" class="title text-decoration-none">
                         <span class="klimat">Klimat</span>
                         <span class="cul">Cul</span>
                     </a>
                     <nav class="menu">
                         <ul class="menu__items">
-                            <a href="#" class="text-decoration-none">
+                            <a href="./uslugi.html" class="text-decoration-none">
                                 <li class="menu__item">Услуги</li>
                             </a>
-                            <a href="#" class="text-decoration-none">
+                            <a href="./price-list.html" class="text-decoration-none">
                                 <li class="menu__item">Прайс-лист</li>
                             </a>
-                            <a href="#" class="text-decoration-none">
+                            <a href="./codi_oshibok.html" class="text-decoration-none">
                                 <li class="menu__item">Коды ошибок</li>
                             </a>
                             <a href="#" class="text-decoration-none">
@@ -106,8 +106,8 @@
                     <div class="main__offers-title">
                         НАШИ УСЛУГИ
                     </div>
-                    <div id="slick" class="main__offers-items">
-                        <div class="main__offers-item">
+                    <div id="slick" class="main__offers-items" role="listbox">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer1.jpg" alt="2">
                             </div>
@@ -121,7 +121,7 @@
                                 ВЫЗВАТЬ МАСТЕРА
                             </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer2.jpg" alt="3">
                             </div>
@@ -135,7 +135,7 @@
                                 ВЫЗВАТЬ МАСТЕРА
                             </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer3.jpg" alt="4">
                             </div>
@@ -149,7 +149,7 @@
                                 ВЫЗВАТЬ МАСТЕРА
                             </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer4.jpg" alt="5">
                             </div>
@@ -163,7 +163,7 @@
                                 ВЫЗВАТЬ МАСТЕРА
                             </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer5.jpg" alt="6">
                             </div>
@@ -175,9 +175,9 @@
                             </div>
                             <button class="call-master btn small-call">
                                 ВЫЗВАТЬ МАСТЕРА
-                            </button>                        
+                            </button>
                         </div>
-                        <div class="main__offers-item">                            
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer6.jpg" alt="7">
                             </div>
@@ -189,9 +189,9 @@
                             </div>
                             <button class="call-master btn small-call">
                                 ВЫЗВАТЬ МАСТЕРА
-                            </button>                        
+                            </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer7.jpg" alt="8">
                             </div>
@@ -203,9 +203,9 @@
                             </div>
                             <button class="call-master btn small-call">
                                 ВЫЗВАТЬ МАСТЕРА
-                            </button>         
+                            </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer8.jpg" alt="9">
                             </div>
@@ -219,7 +219,7 @@
                                 ВЫЗВАТЬ МАСТЕРА
                             </button>
                         </div>
-                        <div class="main__offers-item">
+                        <div class="main__offers-item slide" role="option">
                             <div class="offer__img">
                                 <img src="./img/offer9.jpg" alt="10">
                             </div>
@@ -231,8 +231,8 @@
                             </div>
                             <button class="call-master btn small-call">
                                 ВЫЗВАТЬ МАСТЕРА
-                            </button> 
-                        </div> 
+                            </button>
+                        </div>
                     </div>
                     <div class="arrows">
                         <button class="arrow-left">
@@ -340,9 +340,9 @@
                                 </a>
                             </div>
                             <p id="faq2" class="faq__hidden-text">
-                                Прежде всего, регулярное обслуживание в разы увеличивает срок службы оборудования. К тому же гарантийные обязательства сохраняются только при условии регулярного выполнения обслуживания. <br> <br>
-                                Что касается сроков, то они будут зависеть от места и интенсивности эксплуатации. Так, для бытовых потребителей, используемых кондиционер периодически, достаточно заказывать полное ТО раз в год перед началом сезона. <br> <br>
-                                Машины, эксплуатируемые в коммерческих помещениях, нужно обслуживать ежеквартально. В случаях, когда агрегат работает непрерывно, независимо от времени суток и времени года, обслуживать его необходимо ежемесячно.
+                                Прежде всего, регулярное обслуживание в разы увеличивает срок службы оборудования. К тому же гарантийные обязательства сохраняются только при условии регулярного выполнения обслуживания. <br> <br> Что касается сроков, то
+                                они будут зависеть от места и интенсивности эксплуатации. Так, для бытовых потребителей, используемых кондиционер периодически, достаточно заказывать полное ТО раз в год перед началом сезона. <br> <br> Машины, эксплуатируемые
+                                в коммерческих помещениях, нужно обслуживать ежеквартально. В случаях, когда агрегат работает непрерывно, независимо от времени суток и времени года, обслуживать его необходимо ежемесячно.
                             </p>
                         </div>
                         <hr>
@@ -357,7 +357,8 @@
                                 </a>
                             </div>
                             <p id="faq3" class="faq__hidden-text">
-                                Минимум дважды в год — в начале и в конце сезона — нужно очищать кондиционер самостоятельно или приглашать специалистов. Раз в полтора года или после каждого ремонта нужно проверять и при необходимости дополнять уровень хладагента, иначе воздух будет хуже охлаждаться, а прибор начнёт нагреваться.
+                                Минимум дважды в год — в начале и в конце сезона — нужно очищать кондиционер самостоятельно или приглашать специалистов. Раз в полтора года или после каждого ремонта нужно проверять и при необходимости дополнять уровень хладагента, иначе воздух будет
+                                хуже охлаждаться, а прибор начнёт нагреваться.
                             </p>
                         </div>
                         <hr>
@@ -372,7 +373,8 @@
                                 </a>
                             </div>
                             <p id="faq4" class="faq__hidden-text">
-                                Мы рекомендуем менять воздушные фильтры через 4-6 месяцев интенсивной работы прибора. Желательно это делать весной, перед тем, как наступит жаркое время года. Некоторые производители оснащают кондиционеры специальным индикатором, который в случае загрязнения фильтра меняет свой цвет.
+                                Мы рекомендуем менять воздушные фильтры через 4-6 месяцев интенсивной работы прибора. Желательно это делать весной, перед тем, как наступит жаркое время года. Некоторые производители оснащают кондиционеры специальным индикатором, который в случае загрязнения
+                                фильтра меняет свой цвет.
                             </p>
                         </div>
                         <hr>
@@ -405,16 +407,16 @@
                                 <input type="text" placeholder="Ваше имя" class="name">
                                 <input type="tel" placeholder="Ваш телефон" class="phone">
                                 <select name="" placeholder="Вид услуги" class="choose-offer">
-                                    <option value="start" class="choose-offer-item" selected>Вид услуги</option>
-                                    <option value="" class="choose-offer-item">Профилактика кондиционера</option>
-                                    <option value="" class="choose-offer-item">Чистка кондиционера</option>
-                                    <option value="" class="choose-offer-item">Ремонт кондиционера</option>
-                                    <option value="" class="choose-offer-item">Диагностика кондиционера</option>
-                                    <option value="" class="choose-offer-item">Заправка кондиционера</option>
-                                    <option value="" class="choose-offer-item">Монтаж кондиционера</option>
-                                    <option value="" class="choose-offer-item">Демонтаж кондиционера</option>
-                                    <option value="" class="choose-offer-item">Ремонт VRV и VRF систем</option>
-                                    <option value="" class="choose-offer-item">Ремонт фанкойлов</option>
+                                    <option value="Вид услуги" class="choose-offer-item" selected>Вид услуги</option>
+                                    <option value="Профилактика кондиционера" class="choose-offer-item">Профилактика кондиционера</option>
+                                    <option value="Чистка кондиционера" class="choose-offer-item">Чистка кондиционера</option>
+                                    <option value="Ремонт кондиционера" class="choose-offer-item">Ремонт кондиционера</option>
+                                    <option value="Диагностика кондиционера" class="choose-offer-item">Диагностика кондиционера</option>
+                                    <option value="Заправка кондиционера" class="choose-offer-item">Заправка кондиционера</option>
+                                    <option value="Монтаж кондиционера" class="choose-offer-item">Монтаж кондиционера</option>
+                                    <option value="Демонтаж кондиционера" class="choose-offer-item">Демонтаж кондиционера</option>
+                                    <option value="Ремонт VRV и VRF систем" class="choose-offer-item">Ремонт VRV и VRF систем</option>
+                                    <option value="Ремонт фанкойлов" class="choose-offer-item">Ремонт фанкойлов</option>
                                 </select>
                                 <div class="checkbox">
                                     <input id="checkSecond" type="checkbox" name="checkBox" class="check">
@@ -432,12 +434,12 @@
             </section>
             <footer class="footer">
                 <div class="container">
-                    <a href="#home" class="title text-decoration-none">
+                    <a href="./index.html" class="title text-decoration-none">
                         <span class="klimat">Klimat</span>
                         <span class="cul">Cul</span>
                     </a>
                     <div class="footer__text">
-                        <a href="#" class="polit-conf">
+                        <a href="./politica_confidencialnosty.html" class="polit-conf">
                             Политика конфиденциальности
                         </a>
                         <p class="tilda">
@@ -449,58 +451,65 @@
                     </p>
                 </div>
             </footer>
+            </div>
         </div>
-    </div>
-    <script src="./app.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
-    <script type="text/javascript">
-        const breakpoint = {
-            xs: 480,
-            sm: 768,
-            md: 992,
-            lg: 1200
-        };
-        $(document).ready(function() {
-            $('#slick').slick({
-            autoplay: false,
-            draggable: true,
-            pauseOnHover: false,
-            infinite: true,
-            dots: false,
-            arrows: true,
-            prevArrow: document.querySelector(".arrow-left"),
-            nextArrow: document.querySelector(".arrow-right"),
-            mobileFirst: true,
-            responsive: [
-                {
-                breakpoint: 1110,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
+        <script src="./app.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            const breakpoint = {
+                // extra small screen / phone
+                xs: 480,
+                // small screen / tablet
+                sm: 768,
+                // medium screen / desktop
+                md: 992,
+                // large screen / large desktop
+                lg: 1200
+            };
+            $(document).ready(function() {
+                $('#slick').slick({
+                    autoplay: false,
+                    draggable: true,
+                    pauseOnHover: false,
                     infinite: true,
-                }
-                },
-                {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-                },
-                {
-                breakpoint: 480,
-                settings: {
+                    dots: false,
+                    arrows: true,
+                    prevArrow: document.querySelector(".arrow-left"),
+                    nextArrow: document.querySelector(".arrow-right"),
+                    mobileFirst: true,
                     slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-                }
-            ]
-        })
-        })
-    </script>
+                    slidesToScroll: 1,
+                    responsive: [{
+                        breakpoint: breakpoint.xs,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }, {
+                        breakpoint: breakpoint.sm,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }, {
+                        breakpoint: breakpoint.md,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    }, {
+                        breakpoint: breakpoint.lg,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    }]
+                })
+            })
+        </script>
 </body>
 
 </html>

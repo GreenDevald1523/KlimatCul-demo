@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>KlimatCul</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <section class="popup hide">
+                <div class="popup__content">
+                    <div class="popup__title">
+                        Заполните форму ниже и мы свяжемся с вами в ближайшее время
+                    </div>
+                    <form class="form">
+                        <input type="text" placeholder="Ваше имя" class="name">
+                        <input type="tel" placeholder="Ваш телефон" class="phone">
+                        <select name="" placeholder="Вид услуги" class="choose-offer">
+                            <option value="start" class="choose-offer-item" selected>Вид услуги</option>
+                            <option value="" class="choose-offer-item">Профилактика кондиционера</option>
+                            <option value="" class="choose-offer-item">Чистка кондиционера</option>
+                            <option value="" class="choose-offer-item">Ремонт кондиционера</option>
+                            <option value="" class="choose-offer-item">Диагностика кондиционера</option>
+                            <option value="" class="choose-offer-item">Заправка кондиционера</option>
+                            <option value="" class="choose-offer-item">Монтаж кондиционера</option>
+                            <option value="" class="choose-offer-item">Демонтаж кондиционера</option>
+                            <option value="" class="choose-offer-item">Ремонт VRV и VRF систем</option>
+                            <option value="" class="choose-offer-item">Ремонт фанкойлов</option>
+                        </select>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkFirst" name="checkBox" class="check">
+                            <div class="checkbox__text">
+                                Я соглашаюсь с политикой конфиденциальности
+                            </div>
+                        </div>
+                        <button type="button" disabled="true" class="btn dis" id="show-result">
+                            ВЫЗВАТЬ МАСТЕРА
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="confirm hide" id="confirm">
+                <div class="confirm__content">
+                    <div class="confirm__text">
+                        Спасибо, ваша заявка принята! Наш специалист свяжется с вами в ближайшее время.
+                    </div>
+                </div>
+            </section>
+            <header class="header" id="home">
+                <div class="container">
+                    <a href="index.html" class="title text-decoration-none">
+                        <span class="klimat">Klimat</span>
+                        <span class="cul">Cul</span>
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <a href="./uslugi.html" class="text-decoration-none">
+                                <li class="menu__item">Услуги</li>
+                            </a>
+                            <a href="./price-list.html" class="text-decoration-none">
+                                <li class="menu__item">Прайс-лист</li>
+                            </a>
+                            <a href="./codi_oshibok.html" class="text-decoration-none">
+                                <li class="menu__item">Коды ошибок</li>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <li class="menu__item">Контакты</li>
+                            </a>
+                        </ul>
+                    </nav>
+                    <div class="header__phone-numbers">
+                        <a href="tel:+74993984011" class="number text-decoration-none">8 499 398-40-11</a>
+                        <a href="tel:+79267653335" class="number text-decoration-none">8 926 765-33-35</a>
+                    </div>
+                </div>
+            </header>
+            <section class="help">
+                <div class="container">
+                    <div class="about__title">
+                        коды ошибок кондиционеров
+                    </div>  
+                    <div class="error__sub">
+                        Для вашего удобства мы собрали коды ошибок кондиционеров разных марок.
+                    </div>
+                    <div class="error__columns">
+                        <div class="error__column">
+                            <div class="error__column-item">
+                                <span class="num">
+                                    1
+                                </span>
+                                <span class="error__name">
+                                    ballu
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    2
+                                </span>
+                                <span class="error__name">
+                                    chigo
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    3
+                                </span>
+                                <span class="error__name">
+                                    gree
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    4
+                                </span>
+                                <span class="error__name">
+                                    midea
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    5
+                                </span>
+                                <span class="error__name">
+                                    Mitsubishi Electric
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    6
+                                </span>
+                                <span class="error__name">
+                                    Mitsubishi Heavy
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    7
+                                </span>
+                                <span class="error__name">
+                                    Panasonic
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    8
+                                </span>
+                                <span class="error__name">
+                                    Samsung
+                                </span>
+                            </div>
+                        </div>
+                        <div class="error__column">
+                            <div class="error__column-item">
+                                <span class="num" style="margin-left: 10px;">
+                                    9
+                                </span>
+                                <span class="error__name">
+                                    Toshiba
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    10
+                                </span>
+                                <span class="error__name">
+                                    Zanussi
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    11
+                                </span>
+                                <span class="error__name">
+                                    Aeronik
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    12
+                                </span>
+                                <span class="error__name">
+                                    Beko
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    13
+                                </span>
+                                <span class="error__name">
+                                    McQuay
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    14
+                                </span>
+                                <span class="error__name">
+                                    Kentatsu
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    15
+                                </span>
+                                <span class="error__name">
+                                    Sanyo
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    16
+                                </span>
+                                <span class="error__name">
+                                    Carrier
+                                </span>
+                            </div>
+                        </div>
+                        <div class="error__column">
+                            <div class="error__column-item">
+                                <span class="num">
+                                    17
+                                </span>
+                                <span class="error__name">
+                                    Dantex
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    18
+                                </span>
+                                <span class="error__name">
+                                    Airwell
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    19
+                                </span>
+                                <span class="error__name">
+                                    DeLonghi
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    20
+                                </span>
+                                <span class="error__name">
+                                    JAX
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    21
+                                </span>
+                                <span class="error__name">
+                                    MDV
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    22
+                                </span>
+                                <span class="error__name">
+                                    Fujitsu
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    23
+                                </span>
+                                <span class="error__name">
+                                    Galanz
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    24
+                                </span>
+                                <span class="error__name">
+                                    Hitachi
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    25
+                                </span>
+                                <span class="error__name">
+                                    lg
+                                </span>
+                            </div>
+                            <div class="error__column-item">
+                                <span class="num">
+                                    26
+                                </span>
+                                <span class="error__name">
+                                    tlc
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soon">
+                        Эта страница пока в разработке, скоро тут появится полезная информация!
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <a href="./index.html" class="title text-decoration-none">
+                        <span class="klimat">Klimat</span>
+                        <span class="cul">Cul</span>
+                    </a>
+                    <div class="footer__text">
+                        <a href="./politica_confidencialnosty.html" class="polit-conf">
+                            Политика конфиденциальности
+                        </a>
+                        <p class="tilda">
+                            Иконки от Tilda Publishing
+                        </p>
+                    </div>
+                    <p class="dev-design">
+                        Разработка дизайна
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
+</body>
+
+</html>
